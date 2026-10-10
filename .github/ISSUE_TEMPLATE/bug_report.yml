@@ -1,0 +1,57 @@
+name: Bug report
+description: Something does not work as expected.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! To report a security vulnerability,
+        follow [SECURITY.md](https://github.com/metinata/notify-send/blob/main/SECURITY.md) instead.
+
+  - type: input
+    id: version
+    attributes:
+      label: notify-send version
+      description: The output of `notify-send --version`.
+      placeholder: notify-send 0.1.0
+    validations:
+      required: true
+
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      description: From Settings → System → About, or the output of `winver`.
+      placeholder: Windows 11 24H2, x64
+    validations:
+      required: true
+
+  - type: input
+    id: command
+    attributes:
+      label: Command
+      description: The exact command you ran, and the shell you ran it in.
+      placeholder: notify-send -u critical "Build failed" (PowerShell 7)
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Include any message, the exit code (`$LASTEXITCODE` in PowerShell, `%ERRORLEVEL%` in cmd), and a screenshot of the notification if it looks wrong.
+    validations:
+      required: true
+
+  - type: textarea
+    id: settings
+    attributes:
+      label: Notification settings
+      description: For notifications that do not show, whether Do not disturb is on, and whether notifications are on for the app in Settings → System → Notifications.

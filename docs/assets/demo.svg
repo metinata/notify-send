@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="420" viewBox="0 0 680 420" role="img" aria-label="Examples in a terminal: npm test &amp;&amp; notify-send &quot;Tests passed&quot; || notify-send -u critical &quot;Tests failed&quot; tells you when the tests are done and whether they passed; winget upgrade --all; notify-send &quot;Updates finished&quot; tells you when all your apps are updated; notify-send -A yes=Deploy -A no=Cancel &quot;Deploy to production?&quot; asks a question and prints yes when you click Deploy. A Windows notification from notify-send asks: Deploy to production?, with the buttons Deploy and Cancel">
+  <defs>
+    <clipPath id="window"><rect width="680" height="282" rx="12"/></clipPath>
+    <linearGradient id="demo-bell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6BE5C"/>
+      <stop offset="1" stop-color="#D9822B"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-20%" width="120%" height="150%">
+      <feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#000" flood-opacity=".55"/>
+    </filter>
+  </defs>
+  <!-- Terminal -->
+  <g clip-path="url(#window)">
+    <rect width="680" height="282" fill="#0d1117"/>
+    <rect width="680" height="44" fill="#161b22"/>
+    <!-- Tab -->
+    <path d="M16 44V18a8 8 0 0 1 8-8h160a8 8 0 0 1 8 8v26z" fill="#0d1117"/>
+    <rect x="30" y="20" width="16" height="16" rx="3" fill="#30363d"/>
+    <path d="M34 25l3.5 3-3.5 3M39 31h3.5" fill="none" stroke="#e6edf3" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="56" y="33" fill="#e6edf3" font-family="'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13">Terminal</text>
+    <path d="M162 24l8 8M170 24l-8 8" stroke="#8b949e" stroke-width="1.4" stroke-linecap="round"/>
+    <path d="M210 28h12M216 22v12" stroke="#8b949e" stroke-width="1.4" stroke-linecap="round"/>
+    <!-- Window buttons -->
+    <g stroke="#8b949e" stroke-width="1.2" fill="none">
+      <path d="M548 22h12"/>
+      <rect x="598" y="16" width="11" height="11" rx="1"/>
+      <path d="M646 16l11 11M657 16l-11 11"/>
+    </g>
+    <rect x="0" y="43.5" width="680" height="1" fill="#30363d"/>
+    <!-- The three uses, each with what it does -->
+    <g font-family="'Cascadia Mono', 'Cascadia Code', Consolas, 'SF Mono', Menlo, monospace" font-size="13" fill="#e6edf3">
+      <text x="24" y="78" fill="#8b949e"># Know when the tests are done, and whether they passed</text>
+      <text x="24" y="100"><tspan fill="#7d8590">&gt;</tspan> npm test &amp;&amp; <tspan fill="#f0b072" font-weight="600">notify-send</tspan> "Tests passed" || <tspan fill="#f0b072" font-weight="600">notify-send</tspan> <tspan fill="#79c0ff">-u critical</tspan> "Tests failed"</text>
+      <text x="24" y="138" fill="#8b949e"># Know when all your apps are updated</text>
+      <text x="24" y="160"><tspan fill="#7d8590">&gt;</tspan> winget upgrade --all; <tspan fill="#f0b072" font-weight="600">notify-send</tspan> "Updates finished"</text>
+      <text x="24" y="198" fill="#8b949e"># Ask a question, and act on the answer</text>
+      <text x="24" y="220"><tspan fill="#7d8590">&gt;</tspan> <tspan fill="#f0b072" font-weight="600">notify-send</tspan> <tspan fill="#79c0ff">-A</tspan> yes=Deploy <tspan fill="#79c0ff">-A</tspan> no=Cancel "Deploy to production?"</text>
+      <text x="24" y="242">yes</text>
+    </g>
+  </g>
+  <rect x="0.5" y="0.5" width="679" height="281" rx="11.5" fill="none" stroke="#30363d"/>
+  <!-- The question, as Windows 11 shows it -->
+  <g filter="url(#shadow)">
+    <rect x="318" y="244" width="344" height="156" rx="9" fill="#2b2b2b"/>
+  </g>
+  <rect x="318.5" y="244.5" width="343" height="155" rx="8.5" fill="none" stroke="#454545"/>
+  <g transform="translate(334 258) scale(0.15)">
+    <circle cx="64" cy="102" r="9" fill="#A65A2A"/>
+    <path d="M64 14a7 7 0 0 1 7 7v3.2C86.4 27.6 96 41.4 96 57v19l9.6 11.6A4 4 0 0 1 102.5 94h-77a4 4 0 0 1-3.1-6.4L32 76V57c0-15.6 9.6-29.4 25-32.8V21a7 7 0 0 1 7-7z" fill="url(#demo-bell)"/>
+    <g fill="none" stroke="#FFF4E6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M46 47l10 8-10 8"/>
+      <path d="M63 66h18"/>
+    </g>
+  </g>
+  <g font-family="'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif">
+    <text x="360" y="272" fill="#d4d4d4" font-size="12.5">notify-send</text>
+    <g fill="#c8c8c8">
+      <circle cx="608" cy="268" r="1.2"/>
+      <circle cx="613" cy="268" r="1.2"/>
+      <circle cx="618" cy="268" r="1.2"/>
+    </g>
+    <path d="M639 263l9 9M648 263l-9 9" stroke="#c8c8c8" stroke-width="1.3" stroke-linecap="round"/>
+    <text x="336" y="314" fill="#ffffff" font-size="15" font-weight="600">Deploy to production?</text>
+    <!-- Buttons; the first is hovered, as when it is about to be clicked -->
+    <rect x="334" y="338" width="152" height="44" rx="5" fill="#4a4a4a" stroke="#5c5c5c"/>
+    <rect x="494" y="338" width="152" height="44" rx="5" fill="#3a3a3a" stroke="#4a4a4a"/>
+    <text x="410" y="365" fill="#ffffff" font-size="14" text-anchor="middle">Deploy</text>
+    <text x="570" y="365" fill="#ffffff" font-size="14" text-anchor="middle">Cancel</text>
+    <!-- Pointer on Deploy -->
+    <path d="M440 352l0 18 4.5-4.5 3.2 7 3-1.4-3.2-6.8 6.3-.3z" fill="#ffffff" stroke="#1b1b1b" stroke-width="1.2" stroke-linejoin="round"/>
+  </g>
+</svg>
